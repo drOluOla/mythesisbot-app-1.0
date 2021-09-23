@@ -1,0 +1,307 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- enter_data:
+    use_entities: []
+- ask_builder:
+    use_entities: true
+- ask_weather:
+    use_entities: true
+- ask_howdoing:
+    use_entities: true
+- ask_whatspossible:
+    use_entities: true
+- ask_whatisthesisbot:
+    use_entities: true
+- ask_isbot:
+    use_entities: true
+- ask_howold:
+    use_entities: true
+- ask_languagesbot:
+    use_entities: true
+- ask_restaurant:
+    use_entities: true
+- ask_time:
+    use_entities: true
+- ask_wherefrom:
+    use_entities: true
+- ask_whoami:
+    use_entities: true
+- ask_whatismyname:
+    use_entities: true
+- howwereyoubuilt:
+    use_entities: true
+- handleinsult:
+    use_entities: true
+- nicetomeeyou:
+    use_entities: true
+- telljoke:
+    use_entities: true
+- ask_whoisit:
+    use_entities: true
+- how_to_get_started:
+    use_entities: true
+- mood_approve:
+    use_entities: true
+- mood_disapprove:
+    use_entities: true
+- greet:
+    use_entities: true
+- thankyou:
+    use_entities: true
+- bye:
+    use_entities: true
+- out_of_scope:
+    use_entities: true
+- other_possibilities:
+    use_entities: true
+- canthelp:
+    use_entities: true
+- give_feedback:
+    use_entities: true
+- researcher_handoff:
+    use_entities: true
+- ask_faq_researcher1:
+    use_entities: true
+- ask_faq_researcher2:
+    use_entities: true
+- ask_faq_examiners:
+    use_entities: true
+- ask_faq_supervisor:
+    use_entities: true
+- ask_faq_university:
+    use_entities: true
+- ask_faq_vivadate:
+    use_entities: true
+- ask_faq_graduationdate:
+    use_entities: true
+- ask_faq_graduationvenue:
+    use_entities: true
+- ask_faq_researchduratioin:
+    use_entities: true
+- ask_faq_researchcost:
+    use_entities: true
+- ask_faq_how_botwasbuild:
+    use_entities: true
+- ask_faq_languages:
+    use_entities: true
+- ask_faq_toobroad:
+    use_entities: true
+- ask_faq_questions_to_ask:
+    use_entities: true
+- ask_research_title:
+    use_entities: true
+- ask_summary:
+    use_entities: true
+- ask_dumbed_down_summary:
+    use_entities: true
+- ask_research_area:
+    use_entities: true
+- ask_main_idea:
+    use_entities: true
+- ask_research_aim:
+    use_entities: true
+- ask_research_motivation:
+    use_entities: true
+- ask_most_interesting_aspect:
+    use_entities: true
+- ask_most_enjoyed_aspect:
+    use_entities: true
+- ask_suprised:
+    use_entities: true
+- ask_change_progression:
+    use_entities: true
+- ask_phd_lessons:
+    use_entities: true
+- ask_newresearcher_advice:
+    use_entities: true
+- ask_problem_identification:
+    use_entities: true
+- ask_strongest_influence:
+    use_entities: true
+- ask_most_important_papers:
+    use_entities: true
+- ask_primary_definition:
+    use_entities: true
+- ask_secondary_definition:
+    use_entities: true
+- ask_most_recent_developments:
+    use_entities: true
+- ask_research_questions:
+    use_entities: true
+- ask_research_question1:
+    use_entities: true
+- ask_research_question2:
+    use_entities: true
+- ask_research_question3:
+    use_entities: true
+- ask_key_research_decisions:
+    use_entities: true
+- ask_experimental_design:
+    use_entities: true
+- ask_research_methodology:
+    use_entities: true
+- ask_research_methodology_options:
+    use_entities: true
+- ask_research_methodology_options_advantage:
+    use_entities: true
+- ask_ethical_issues:
+    use_entities: true
+- ask_dataset:
+    use_entities: true
+- ask_evaluation:
+    use_entities: true
+- ask_evaluation_correct:
+    use_entities: true
+- ask_strongest:
+    use_entities: true
+- ask_weakest:
+    use_entities: true
+- ask_improvement:
+    use_entities: true
+- ask_summarise_finding:
+    use_entities: true
+- ask_finding_literature_relation:
+    use_entities: true
+- ask_empirical_practical_implications:
+    use_entities: true
+- ask_research_contributions:
+    use_entities: true
+- ask_research_contribution1:
+    use_entities: true
+- ask_research_contribution2:
+    use_entities: true
+- ask_research_contribution3:
+    use_entities: true
+- ask_phd_interests:
+    use_entities: true
+- ask_phd_publication:
+    use_entities: true
+- ask_research_futureworks:
+    use_entities: true
+- ask_research_futurework1:
+    use_entities: true
+- ask_research_futurework2:
+    use_entities: true
+- ask_research_futurework3:
+    use_entities: true
+- ask_researcher_status:
+    use_entities: true
+entities:
+- name
+- number
+slots:
+  feedback:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+responses: {}
+actions:
+- utter_ask_builder
+- utter_ask_weather
+- utter_ask_howdoing
+- utter_ask_whatspossible
+- utter_ask_whatisthesisbot
+- utter_ask_isbot
+- utter_ask_howol1d
+- utter_ask_languagesbot
+- utter_ask_restaurant
+- utter_ask_time
+- utter_ask_wherefrom
+- utter_ask_whoami
+- utter_ask_whatismyname
+- utter_howwereyoubuilt
+- utter_handleinsult
+- utter_nicetomeeyou
+- utter_telljoke
+- utter_ask_whoisit
+- utter_out_of_scope
+- utter_other_possibilities
+- utter_ask_know_more
+- utter_type_message
+- utter_canthelp
+- utter_default
+- utter_thankyou
+- utter_bye
+- utter_give_feedback
+- utter_how_to_get_started
+- utter_how_to_get_started_more
+- utter_get_started
+- utter_researcher_handoff
+- utter_awesome
+- utter_thumbsup
+- action_faqs
+- action_chitchat
+- action_research
+- action_greet_user
+- action_multilines
+- action_store_feedback
+- action_default_ask_affirmation
+- action_default_fallback
+- utter_ask_faq_researcher1
+- utter_ask_faq_researcher2
+- utter_ask_faq_examiners
+- utter_ask_faq_supervisor
+- utter_ask_faq_university
+- utter_ask_faq_vivadate
+- utter_ask_faq_graduationvenue
+- utter_ask_faq_graduationdate
+- utter_ask_faq_researchduratioin
+- utter_ask_faq_researchcost
+- utter_ask_faq_how_botwasbuild
+- utter_ask_faq_languages
+- utter_ask_faq_toobroad
+- utter_ask_faq_questions_to_ask
+- utter_ask_research_title
+- utter_ask_summary
+- utter_ask_dumbed_down_summary
+- utter_ask_research_area
+- utter_ask_main_idea
+- utter_ask_research_aim
+- utter_ask_research_motivation
+- utter_ask_most_interesting_aspect
+- utter_ask_most_enjoyed_aspect
+- utter_ask_suprised
+- utter_ask_change_progression
+- utter_ask_phd_lessons
+- utter_ask_newresearcher_advice
+- utter_ask_problem_identification
+- utter_ask_strongest_influence
+- utter_ask_most_important_papers
+- utter_ask_primary_definition
+- utter_ask_secondary_definition
+- utter_ask_most_recent_developments
+- utter_ask_research_question1
+- utter_ask_research_question2
+- utter_ask_research_question3
+- utter_ask_key_research_decisions
+- utter_ask_experimental_design
+- utter_ask_research_methodology
+- utter_ask_research_methodology_options
+- utter_ask_research_methodology_options_advantage
+- utter_ask_ethical_issues
+- utter_ask_dataset
+- utter_ask_evaluation
+- utter_ask_evaluation_correct
+- utter_ask_strongest
+- utter_ask_weakest
+- utter_ask_improvement
+- utter_ask_summarise_finding
+- utter_ask_finding_literature_relation
+- utter_ask_empirical_practical_implications
+- utter_ask_research_contribution1
+- utter_ask_research_contribution2
+- utter_ask_research_contribution3
+- utter_ask_phd_interests
+- utter_ask_phd_publication
+- utter_ask_research_futurework1
+- utter_ask_research_futurework2
+- utter_ask_research_futurework3
+- utter_ask_researcher_status
+forms: {}
+e2e_actions: []

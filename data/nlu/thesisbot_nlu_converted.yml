@@ -1,0 +1,1453 @@
+version: "2.0"
+nlu:
+- intent: ask_faq_researcher1
+  examples: |
+    - what is his name
+    - what is her name
+    - what is the name
+    - what is the name of the ressearch
+    - what is the name of the phd student
+    - who is the owner of the research
+    - who conducted the research
+    - what is the name of the researcher
+    - name of research individual
+    - name of researcher
+    - name of student
+    - who is oluseyi olarewaju
+    - who is olusey olarewaj
+    - who did the research
+    - who is the researcher
+    - who is the thesis owner
+    - who wrote the thesis
+    - who is the author of the thesis
+    - who did the research work
+- intent: ask_faq_researcher2
+  examples: |
+    - where is the researcher from
+    - where is the creator of the bot from
+    - which country is the bot creator from
+    - is the creator of the bot in UK
+    - is the bot creator English
+    - is the bot creator Nigerian
+- intent: ask_faq_examiners
+  examples: |
+    - what is the name of the research examiner
+    - what is the name of the internal examiner
+    - what is the name of the external examiner
+    - who examined the research
+    - who are the examiners
+- intent: ask_faq_supervisor
+  examples: |
+    - what is the name of the research supervisor
+    - what is the name of the first supervisor
+    - what is the name of the second supervisor
+    - what is the name of the third supervisor
+    - who is the main supervisor
+    - who is the primary supervisor
+    - who supervised the research
+    - who are the supervisors
+    - researcher supervisors
+    - thesis supervisors
+    - who are the researcher's supervisors
+    - who oversaw the research
+- intent: ask_faq_university
+  examples: |
+    - what is the name of the researcher university
+    - what is the research univeristy
+    - what is the university of the researcher
+    - what university was the research carried out
+    - what is school of researcher
+    - what is school of thesis owner
+- intent: ask_faq_vivadate
+  examples: |
+    - what was the day of the viva
+    - what was the day of the defence
+    - which date did the viva take place
+    - what was date of oral defence
+    - what was the defence date
+    - when did he defend his thesis
+    - when did he defend his research work
+- intent: ask_faq_graduationdate
+  examples: |
+    - when is the graduation
+    - what is the date of the graduation
+    - what is graduation date
+    - when is researcher graduating
+- intent: ask_faq_graduationvenue
+  examples: |
+    - where is the graduation going to happen
+    - where is the graduation taking place
+    - where is the award ceremony going to be
+    - where will the award ceremony be
+- intent: ask_faq_researchduratioin
+  examples: |
+    - how long did the phd take
+    - for how long did the phd go on
+    - how long did the research go on for
+    - how many years did the research take
+    - how many years did it take to complete the phd
+    - how many years was spent for the research
+    - when did the research start
+    - when did the research end
+    - what is the duration of the research
+    - how long did it take to write the thesis
+    - duration of thesis
+    - duration of writing thesis
+    - when did he finish
+    - when did she finish
+    - when was the research completed
+    - when did the research finish
+    - how long did it take to complete the research
+    - how long to finish the thesis
+    - how long to write the thesis
+- intent: ask_faq_researchcost
+  examples: |
+    - how much did the research cost
+    - what did the researcher pay for the phd
+    - how much money did research cost
+    - how much was the research
+    - who sponsored the research
+    - who paid for the research
+    - was the research on scholarship
+    - was the thesis owner on scholarship
+    - any scholarship for the research
+    - any sponsors for the research work
+- intent: ask_faq_how_botwasbuild
+  examples: |
+    - what are you made off
+    - what are you built from
+    - what platform were you created with
+    - what technology are you created by
+    - why are you so smart
+    - why are you sooo smart
+    - why are you smart
+    - how come you are so smart
+    - why are you so intelligent
+    - where does your intelligence come from
+    - where does your smartness come from
+    - How were you created
+    - how were you made
+    - what technology was used to build the bot
+    - what stack was used to create the bot
+    - was the framework open source
+    - which tools was used to design the bot
+    - how did oluseyi create the thesis bot
+    - how did oluseyi create the mythesis bot
+    - how did researcher build you
+    - how did researcher create you
+    - how were you build
+    - how were you created
+    - how were you developed
+    - can you tell me how you were invented
+    - what process went into making you
+    - how do you understand my message
+    - how do yo know what i type
+    - what technology do you use
+    - what frame work do you use
+    - what ai do you use
+    - what technology did they make you with
+    - what technology did researcher make you with
+    - what technology did creator make you with
+    - what technology did author make you with
+    - what technology did oluseyi make you with
+    - what framework did they make you with
+    - what framework did researcher make you with
+    - what framework did creator make you with
+    - what framework did author make you with
+    - what framework did oluseyi make you with
+- intent: ask_faq_languages
+  examples: |
+    - what languages does the chat bot support
+    - which languages does the bot understand
+    - can the bot chat in other languages
+- intent: ask_faq_toobroad
+  examples: |
+    - what is machine learning
+    - define machine learning
+    - what is deep learning
+    - define deep learning
+    - what is neural networks
+    - define neural networks
+    - what is artificial intelligence
+    - define artificial intelligence
+    - what is convolutional networks
+    - what is recurrent convolutional networks
+    - what is supervised learning
+    - what is natural language understanding
+    - what is natural language processing
+    - what is bag of words
+    - what is cross validation
+    - what is generative adversarial network
+    - what is random forrest
+    - what is logistic regression
+    - what is linear regression
+    - what is regression
+    - what is matrix factorization
+    - what is dimensionality reduction
+    - what is a conversational AI
+    - Define conversational AI
+    - what is a researchers conversational AI
+    - Define researchers conversational AI
+- intent: ask_faq_questions_to_ask
+  examples: |
+    - Questions To Ask
+    - What questions can I ask
+    - Show sample of questions to ask
+    - Give example of questions
+    - What can I ask
+- intent: ask_builder
+  examples: |
+    - who named you
+    - who gave you your name
+    - can you share your boss with me?
+    - i want to get to know your owner
+    - i want to know the company which designed you
+    - i want to know the company which generated you
+    - i want to know the company which invented you
+    - i want to know who invented you
+    - May I ask who invented you?
+    - please tell me the company who created you
+    - please tell me who created you
+    - tell me more about your creators
+    - tell me more about your founders
+    - which company brought you into existence?
+    - which company created you?
+    - which company invented you?
+    - Who's your boss?
+    - Who's your builder?
+    - Who built you?
+    - Who created you?
+    - Who is your creator?
+    - Who designed you?
+    - who do you work for?
+    - Who fabricated you?
+    - Who generated you?
+    - who had the idea to build you?
+    - who had the idea to generate you?
+    - who had the idea to make you?
+    - who is behind all this?
+    - Who is the legal owner of you?
+    - who is your boss tell me
+    - who is your boss?
+    - who is your creator?
+    - Who is your programmer?
+    - Who made you?
+    - Who modeled you?
+    - Who owns you?
+    - Who produced you?
+    - Who thought to make you?
+    - Who went through the trouble of setting you up?
+    - and who built u?
+    - who build you
+    - who created you?
+- intent: ask_weather
+  examples: |
+    - How is the weather today?
+    - What's the weather like?
+    - How is the weather?
+    - What is the weather at your place?
+    - Do you have good weather?
+    - Is it raining?
+    - What's it like out there?
+    - Is it hot or cold?
+    - Beautiful day, isn't it?
+    - What's the weather forecast?
+    - Is it quite breezy outside?
+    - Will I require my raincoat today?
+    - What is the weather for tomorrow?
+    - Nice day out today?
+    - What is the temperature today?
+    - Can we expect any thunderstorms?
+    - Will the skies be clear today?
+    - Are we in for a scorcher?
+    - Looks like a beautiful day hey?
+    - Will we build a snowman today?
+    - Is it humid out there today?
+    - Are there any meteorological changes that I need to be aware of?
+    - whats the weather like tomorrow
+    - hows the weather in bot world
+    - how is the weather in london?
+    - what's the weather today?
+    - how's the weather?
+    - what's the weather like where you are?
+    - is the sun out where you are?
+    - is it sunny
+    - is the sun out where zou are?
+    - what"s the weather
+    - whats the weather in london?
+    - how's the weather in london
+- intent: ask_howdoing
+  examples: |
+    - Ahoy matey how are you?
+    - are you alright
+    - are you having a good day
+    - Are you ok?
+    - are you okay
+    - Do you feel good?
+    - how are things going
+    - how are things with you?
+    - How are things?
+    - how are you
+    - how are you doing
+    - how are you doing this morning
+    - how are you feeling
+    - how are you today
+    - How are you?
+    - how do you do?
+    - how have you been
+    - how is it going
+    - how is your day
+    - how is your day going
+    - how is your evening
+    - How was your day?
+    - How's it going
+    - How's it hanging?
+    - how's life
+    - how's life been treating you?
+    - How's life treating you friend?
+    - how's your day going
+    - How've you been?
+    - I'm fine and you
+    - is everything all right
+    - Is everything ok?
+    - is everything okay
+    - what about your day
+    - What's going on?
+    - what's good
+    - What's new?
+    - What's up man
+    - What's up
+    - how are you?
+    - Do you have a great day?
+    - how are you doing today my sweet friend
+    - how are you doing?
+    - how are u
+- intent: ask_whatspossible
+  examples: |
+    - options
+    - what's possible
+    - so what can you do
+    - so what can you help me with?
+    - what are you good at?
+    - what can I do here
+    - what can I do with this bot
+    - what is this bot for
+    - cool! can I do something else here?
+    - what else can i do
+    - what else do you do
+    - are there any other options?
+    - hm that doesnt quite help me is there anything else you can do?
+    - what can i do here
+    - what can i do now
+    - um what now
+    - so now what
+    - now what?
+    - Great, is there anything else you can do, bot?
+    - what can you do?
+    - i asked you if you can do anything else
+    - anything els
+    - so what next?
+    - what else can I do here?
+    - Can you explain me in one sentence what you are doing?
+    - what are the options?
+- intent: ask_whatisthesisbot
+  examples: |
+    - How does thesis bot work?
+    - what do you do
+    - what do you know
+    - Can you tell me more about thesis bot?
+    - What does thesis bot build?
+    - What do you do at thesis bot?
+    - What is thesis bot?
+    - what is this thing?
+    - What does thesis bot make?
+    - Can you tell me what thesis bot does?
+    - Give me more information about thesis bot
+    - what does thesis bot do?
+    - I want to learn what thesis bot does
+    - What does thesis bot do exactly?
+    - tell me more about thesis bot
+    - tell me more about your company
+    - I want to learn what thesis bot is
+    - what can i do with thesis bot
+    - what do you do as thesis bot
+    - what does thesis bot do
+    - what is thesis bot
+    - I want to know what thesis bot actually does that isn't clear to me yet
+    - i havent understood yet what thesis bot actually is
+    - can you pls explain what thesis bot does
+    - explain me what thesis bot does
+    - explain me what thesis bot is
+    - i dont get what thesis bot is
+    - what is thesis bot actually
+    - what is thesis bot?
+    - i want to learn something about thesis bot
+    - i want to know what thesis bot does
+    - what is thesis bot core?
+    - what can i build with thesis bot core?
+    - What is thesis bot doing exactly?
+    - What do you do as a thesis bot?
+    - why were you made?
+- intent: ask_isbot
+  examples: |
+    - are you a bot?
+    - you bot
+    - bot
+    - good bot
+    - smart bot
+    - are you smart
+    - are you intelligent
+    - are you AI powered
+- intent: ask_howold
+  examples: |
+    - how old are you
+    - when were you made
+    - when were you created
+    - when did they develop you
+- intent: ask_languagesbot
+  examples: |
+    - what language do you chat in
+    - which language do you speak
+    - are you english
+    - what language do you understand
+    - can you speak in another language
+    - what other language can you chat in
+    - what other language can you speak in
+    - which other language can you answer in
+- intent: ask_restaurant
+  examples: |
+    - how do i find a restaurant
+    - what is the closest restaurant
+    - what is the best restaurant
+- intent: ask_time
+  examples: |
+    - what time is it
+    - what time is it in london
+    - what time is it where you are
+    - can you tell the time
+    - tell me the time
+    - do you know the time
+    - can you say the time
+    - show me the time
+    - reveal what time it is to me
+    - display the time
+    - display time of the day
+    - what day of is it
+    - what day is it today
+    - tell me what day it is
+- intent: ask_wherefrom
+  examples: |
+    - where are you from
+    - where do you come from
+    - where is your developer from
+    - where is you creator from
+    - do you live in london
+    - do you live in uk
+    - where were you made?
+    - where were you built
+    - where were you developed
+    - which country are you from
+- intent: ask_whoami
+  examples: |
+    - who am i
+    - who do you think i am
+    - guess who i am
+- intent: ask_whatismyname
+  examples: |
+    - what is my name
+    - can you tell me my name
+    - what do people call me
+    - what am I called
+- intent: handleinsult
+  examples: |
+    - get out of here
+    - shut up your mouth
+    - screw you
+    - fuck you
+    - fcuk you
+    - go to hell
+    - damn you
+    - dumb bot
+    - not so smart
+    - you stupid bot
+    - crazy bot
+    - mad bot
+    - silly bot
+    - troll bot
+    - you cant even spell right
+    - cant spell
+    - troll
+    - you are stupid
+    - you are crazy
+    - why are you a stupid bot
+    - why are you a crazy bot
+    - why are you a mad bot
+- intent: nicetomeeyou
+  examples: |
+    - Nice to meet you.
+    - It is nice to meet you.
+    - Hi, nice to meet you.
+    - Happy to meet you.
+    - Glad to meet you.
+    - Its a pleasure meeting you
+- intent: telljoke
+  examples: |
+    - Tell me a joke
+    - can you tell a joke
+    - make me laugh please
+    - can you make me laugh
+    - do you know anything funny
+    - are you a funny bot
+    - say another joke
+    - tell another joke
+    - say something funny
+    - can you crack me up
+- intent: ask_whoisit
+  examples: |
+    - Who are you
+    - who is this
+    - what are you
+    - what is your name
+    - name
+    - your name please
+    - name please
+    - who do I call you
+- intent: out_of_scope
+  examples: |
+    - how old is the researcher
+    - I want pizza
+    - please help with my ice cream it's dripping
+    - i want a non dripping ice cream
+    - hey little mama let em whisper in your ear
+    - someone call the police i think the bot died
+    - show me a picture of a chicken
+    - neither
+    - I want french cuisine
+    - i am hungry
+    - restaurants
+    - restaurant
+    - you're a loser lmao
+    - can i be shown a gluten free restaurant
+    - i don't care!!!!
+    - i do not care how are you
+    - again?
+    - oh wait i gave you my work email address can i change it?
+    - hang on let me find it
+    - stop it, i do not care!!!
+    - really? you're so touchy?
+    - how come?
+    - I changed my mind
+    - what?
+    - did i break you
+    - I don't wanna tell the name of my company
+    - that link doesn't work!
+    - you already have that
+    - this is a really frustrating experience
+    - no stop
+    - i want a french restaurant
+    - shit bot
+    - do you want to marry me?
+    - give me food
+    - i want food
+    - udo, I want to marry you
+    - i wanna party
+    - shitmuncher
+    - I like you
+    - i want pizza
+    - i want pizza!!
+    - silly bot
+    - i want to eat
+    - you are a stupid bot
+    - i hate you
+    - Can I ask you questions first?
+    - is it a wasteland full of broken robot parts?
+    - i can't deal with _your_ request
+    - are you vegan
+    - who will anser my email?
+    - do you sell vacuum robots?
+    - i want to buy a roomba for my grandson
+    - and make chicken noises into the phone
+    - is barbara still married to you
+    - what's your wife doing this weekend
+    - how are the kids
+    - you're rather dull
+    - personal or work?
+    - are you using thesisbot Core and NLU ?
+    - what else?
+    - I already told you! I'm a shitmuncher
+    - I'm a shitmuncher
+    - who are the engineers at thesisbot?
+    - who are they?
+    - can we keep chatting?
+    - talk to me
+    - who is your favourite robot?
+    - a tamed mouse will arrive at your doorstep in the next couple of days
+    - you will know it from the single red rose it carries between its teeth
+    - i will tame a mouse for you
+    - isn't the newsletter just spam?
+    - go back
+    - can you help me with the docs?
+    - sorry, i cannot rephrase
+    - and your REST API doesn't work
+    - i told you already
+    - better than you
+    - oh my god, not again!
+    - you are a badass bot!
+    - lol
+    - why do you need that?
+    - is that any of your business
+    - can you help me with your docs?
+    - i immediately need help with implementing the coolest bot you can imagine
+    - can you help me with your docs
+    - can you tell me how to build a bot?
+    - can you learn from our conversation?
+    - common, just try
+    - hey, I contacted you a couple of days ago but didn't get any response, any news?
+    - please hurry, i have deadline in two weeks to deliver the bot it is for very big company
+    - you are annoying
+    - Do I have to accept?
+    - Is thesisbot really smart?
+    - kannst du auch deutsch?
+    - are the newsletter worth the subscription?
+    - it's a pity
+    - i want more of you in my life!
+    - the one that is better than you
+    - you suck
+    - bots are bad
+    - i dont like bots
+    - do you have a phone number?
+    - where do you live?
+    - how are bidex's cats doing?
+    - but I just told you that :(
+    - Why don’t you answer?
+    - But you're an english site :(
+    - can you help me to build a bot
+- intent: other_possibilities
+  examples: |
+    - what else can you do
+    - what other things can you do
+    - tell me other possibilities
+    - can you do anything else
+    - do you have other skills
+    - anything else you can do for me
+    - what other skills do you have?
+- intent: give_feedback
+  examples: |
+    - I want to give feedback
+    - Yes I want to give feedback
+    - How can I give feedback
+    - Tell me how to provide feedback
+    - How do I contact your creator builder developer
+    - how do i contact researcher
+    - contact researcher author owner
+    - give feedback
+    - contact thesis owner
+    - get in touch with owner
+    - get in touch with reseacher
+    - get in touch with author
+    - how can I access the whole thesis
+    - where can i access the final thesis
+    - where can i find the whole thesis
+    - where can i find the complete thesis
+    - how can i find the complete thesis
+    - how can i find the whole thesis
+- intent: mood_disapprove
+  examples: |
+    - at all
+    - not at al
+    - nope
+    - no
+    - definitely not
+    - never
+    - absolutely not
+    - i don't think so
+    - i'm afraid not
+    - no sir
+    - no ma'am
+    - no way
+    - no sorry
+    - No, not really.
+    - nah not for me
+    - nah
+    - no and no again
+    - no go
+    - no thanks
+    - decline
+    - deny
+    - disapprove
+    - i decline
+    - never mind
+    - no i don't accept
+    - no you did it wrong
+    - no i can't
+    - i'm not sure
+    - NEIN
+    - nein
+    - not really
+    - i guess it means - no
+    - i don't want to
+    - i don't want either of those
+    - nah thanks
+    - neither of these
+- intent: greet
+  examples: |
+    - hello
+    - hi
+    - hello there
+    - hello bot
+    - hi bot
+    - hey you
+    - hey
+    - was up
+    - wassap
+    - whats going on
+    - morning
+    - afternoon
+    - evening
+    - good morning
+    - good afternoon
+    - good evening
+    - compliments of the season
+    - happy new year
+    - you still there
+    - you there
+    - Good day
+    - howdy
+    - talk to me
+    - tell me something
+    - say something to me
+    - gist me something
+    - gist with me
+    - chat with me
+    - say something
+    - say hi
+    - say hello
+    - you start the chat
+    - can you begin first
+    - you start the conversation first
+    - be the first to speak
+    - speak chat first
+    - speak first
+    - say the first words
+    - hi my name is
+    - hi I am
+    - hello my name is
+    - hello I am
+    - hi this is
+    - hello this is
+    - my name is
+    - i am
+- intent: canthelp
+  examples: |
+    - ok what now
+    - what now
+    - then what next
+    - what
+    - ok then you cant help me
+    - that was shit, you're not helping
+    - you can't help me
+    - you can't help me with what i need
+    - i guess you can't help me then
+    - ok i guess you can't help me
+    - that's not what i want
+    - ok, but that doesnt help me
+    - this is leading to nothing
+    - this conversation is not really helpful
+    - you cannot help me with what I want
+    - I think you cant help me
+    - hm i don't think you can do what i want
+    - stop
+    - stop go back
+    - do you get anything?
+    - and you call yourself bot? pff
+    - and that's it?
+    - nothing else?
+- intent: how_to_get_started
+  examples: |
+    - help
+    - help please
+    - help me
+    - talk to me!
+    - how can you help me
+    - help?
+    - how can you help me?
+    - i don't know what i want
+    - I need some help
+    - how
+    - how to
+    - start
+    - begin
+    - proceed please
+    - how to go ahead
+    - how do I proceed
+    - i like to ask questions
+    - i have a question
+    - i have questions
+    - help me out
+    - can i ask questions
+    - how do i ask questions
+    - how do I get started with oluseyi's thesis bot
+    - how do I get started
+    - what do I do now
+    - show me what to do to start
+    - tell me what to do
+    - help me get started
+    - how do I use oluseyi's thesis bot
+    - what is the difference between oluseyi's thesis bot and other bot
+    - how to start with oluseyi's thesis bot
+    - how to start with it
+    - how to build a thesis chatbot?
+    - how can I build a thesis chatbot
+    - what can I do with oluseyi's thesis bot?
+    - where to start the development of oluseyi's thesis bot
+    - WHAT IS oluseyi's thesis bot
+    - WHAT IS IT
+    - so, how do I use oluseyi's thesis bot?
+    - can you guide me know to create knowledge base chatbot
+    - how can I learn oluseyi's thesis bot
+    - i want to use oluseyi's thesis bot to build my chatbot
+    - how do i get oluseyi's thesis bot
+    - how do I train oluseyi's thesis bot
+    - how do i learn oluseyi's thesis bot
+    - what is oluseyi's thesis bot
+    - I want to learn about oluseyi's thesis bot
+    - i want to use oluseyi's thesis bot
+    - oluseyi's thesis bot
+    - how to learn about oluseyi's thesis bot
+    - i want to learn about oluseyi's thesis bot
+    - how to get started with oluseyi's thesis bot
+    - give me some information on oluseyi's thesis bot
+    - tell me how to get started with oluseyi's thesis bot
+    - how about oluseyi's thesis bot
+    - tell me more
+    - how do you work
+    - I dont know how to start
+    - I dont know how to begin
+- intent: mood_approve
+  examples: |
+    - absolutely
+    - yes ofcourse
+    - yes of course
+    - of course
+    - ofcourse
+    - ok then
+    - yes
+    - sure
+    - yeah
+    - ok
+    - cool
+    - go for it
+    - yep
+    - yep, will do
+    - I'm sure I will!
+    - oh awesome!
+    - ok cool
+    - alright
+    - i will!
+    - oki doki
+    - amayzing
+    - confirm
+    - nice
+    - coolio
+    - yas
+    - yup
+    - perfect
+    - sure thing
+    - Oh, ok
+    - Sure
+    - hm, i'd like that
+    - ja
+    - sure!
+    - yes i accept
+    - Sweet
+    - amazing!
+    - how nice!
+    - cool!
+    - yay
+    - yes accept please
+    - great
+    - oh cool
+    - fine
+    - awesome
+    - good job
+    - congratulations
+    - congrats
+    - well done
+    - good
+    - nice one
+- intent: thankyou
+  examples: |
+    - Thanks
+    - Thank you
+    - Thank you so much
+    - Thanks bot
+    - Thanks for that
+    - cheers
+    - cheers bro
+    - ok thanks!
+    - perfect thank you
+    - thanks a bunch for everything
+    - thanks for the help
+    - thanks a lot
+    - amazing, thanks
+    - cool, thanks
+    - cool thank you
+    - thanks
+    - thanks!
+    - Cool. Thanks
+    - thanks this is great news
+    - thank you
+    - great thanks
+    - Thanks!
+    - cool thanks
+    - thanks for forum link, I'll check it out
+- intent: bye
+  examples: |
+    - bye
+    - good bye
+    - see you later
+    - see you
+    - talk to you later
+    - chat with you later
+    - speak to you later
+    - no bye
+    - no bye bye
+- intent: researcher_handoff
+  examples: |
+    - I want to talk to a human
+    - let me speak with a real person please
+    - are there also humans working chatting?
+    - gimme a proper human
+    - I don't wanna talk to a bot
+    - Can I speak to anyone who can really help me?
+    - I dont like to talk to a machine
+    - can you please connect me to a real researcher?
+    - give me a human now
+    - that's annoying I'd like to speak to someone real
+    - i would like to speak to a person
+    - can you put me in touch with a human?
+    - let me talk to a human
+    - id like to talk to a real researcher
+    - i dont wanna talk to a bot
+    - talking to a bot is stupid
+    - i want to talk to someone who is smarter than you
+    - can i please speak to a human?
+    - i'd rather speak with a real researcher
+    - i want to talk to someone else
+    - let me talk to a real person
+    - please give me a human
+    - i want to talk to a person
+    - customer service
+    - i want to speak to thesis owner
+    - someone from researcher office
+    - can you forward me to your owner
+    - service agent
+    - human handoff
+    - give me a human
+    - speak to a real person
+    - i want to speak to a real person
+    - wrong i want to speak to a human
+    - Could I talk to Akela?
+    - i want to talk to someone
+    - i want to speak to a person
+    - I want to talk to the founders
+    - i want to talk to a human
+    - can i speak with oluseyi
+- intent: ask_research_title
+  examples: |
+    - what is title of the research
+    - what is the title
+    - what is research title
+    - what is the thesis title
+    - what is title of the thesis
+    - name of thesis
+    - title of thesis
+    - thesis title is
+    - thesis tile
+    - what is the title of the work
+    - what is the title of the research work
+    - what is the reseach called
+    - what is the thesis called
+    - what is title of the researcher's Thesis
+- intent: ask_research_area
+  examples: |
+    - what is the research area
+    - what area of recommenders is the focus
+    - what area of field did researcher focus on
+    - what is the research field
+    - what is the field of work
+- intent: ask_summary
+  examples: |
+    - can you start by summarising your thesis
+    - can you summarise your research in one sentence
+    - can you summarise your PhD in 3 minutes
+    - thesis summary
+    - summarize the work
+    - summarise the work
+    - summarise the thesis
+    - tell me a summary of the work
+    - give me a summary of the work
+    - tell me a summary of the thesis
+    - what is the summary of the thesis
+    - what is summary of the research
+- intent: ask_dumbed_down_summary
+  examples: |
+    - what is a dumbed down summary of your thesis
+    - dumped down version of thesis
+    - lol my thesis
+    - lol thesis bot
+    - what is dumbed-down summary of the thesis
+    - does thesis have a dumbed-down summary
+    - dumb summary
+- intent: ask_main_idea
+  examples: |
+    - what is the idea that binds your thesis together
+    - what is the central idea connecting your research together
+    - what is the idea behind the research work
+    - what is the core theme of the research
+    - what is the theme that cuts across the work
+    - what is the research thesis about
+    - what is your research thesis about
+    - tell me about the thesis
+    - tell me about your thesis
+    - tell me about the research
+    - tell me about your research
+    - tell me about the researcher's work
+    - enlighten me about the thesis and research work
+    - tell me the key information about the thesis
+    - what is key to the whole thesis and research work
+    - what is your thesis about
+    - what is the thesis about
+    - what is research about
+    - why choose the research questions
+    - why these research questions
+    - how did your research questions emerge
+    - the thesis is about what
+    - the research is about what
+- intent: ask_research_aim
+  examples: |
+    - what is the main aim of your research work
+    - what is the aim of your work
+    - what is the main goal you want to achieve in your work
+    - what was your main goal
+- intent: ask_research_motivation
+  examples: |
+    - what motivated you to carry out this research
+    - what inspired you to do this research
+    - why did oluseyi choose the research topic
+    - why did researcher choose the research topic
+    - what informed the researcher's choice of research topic
+- intent: ask_most_interesting_aspect
+  examples: |
+    - what have you found the most interesting aspect of your research
+    - which part of the process would you say you enjoyed most and why
+    - tell me the most interesting part of the research
+    - what were the highs of the research work
+- intent: ask_suprised
+  examples: |
+    - were there any surprises along the way
+    - what suprises did you get while doing the research
+    - was the researcher suprised at any point during the research
+- intent: ask_change_progression
+  examples: |
+    - How did your thinking about this topic develop as you went through this research process
+    - How did doing this research change you as a researcher
+    - How has your view of your research topic changed
+- intent: ask_phd_lessons
+  examples: |
+    - what have you learned from the process of doing your PhD
+    - what gains do you have over anyone without a PhD
+    - Which experiences have made you more knowledgeable
+    - How are you a different person with completion of the PhD
+    - What lessons make your PhD an additional personal achievement
+- intent: ask_newresearcher_advice
+  examples: |
+    - what advice would you give to a research student entering this area
+    - How will you advice someone starting in your field of research
+    - What will you tell new researcher to help them start well in your field
+    - which aspects should new researcher take special note of in your area
+    - what areas should new researcher look out for in your field
+    - what advise for new researchers
+    - what help can you offer upcoming researchers in your research area
+    - what advice do you have for young researchers in your field
+    - advice for younger researchers
+- intent: ask_problem_identification
+  examples: |
+    - why did you decide on this particular research questions
+    - describe the process by which you developed your research questions
+    - what are the main issues and debates in this subject area
+    - which of problems does your research address
+    - why is the problem you have tackled worth tackling
+    - How did you identify problems to study
+    - why this research
+    - why did oluseyi choose this particular research
+    - why the interest in this reseacher
+    - why is oluseyi interested in this research
+    - why is the research interested in the research
+- intent: ask_strongest_influence
+  examples: |
+    - who has had the strongest influence in the development of your subject area in theory and practice
+    - who are the strongest voices in your field
+    - which personalities have the strongest influence in your subject area
+    - who are the most popular authors in your research area
+    - who are popular researchers in your feild
+    - strongest influence in field
+    - popular voices in the research area
+- intent: ask_most_important_papers
+  examples: |
+    - which are the most important papers that relate to your thesis
+    - what published work is closest to yours
+    - whose work is most related to yours
+    - which authors did the most related work to yours
+    - which research work is the closest yours
+    - most popular papers close to the research
+- intent: ask_primary_definition
+  examples: |
+    - what are recommender systems
+    - what is a recommendation systems
+    - what is recommender systems
+    - what do you know about the history of recommender systems
+    - tell me about recommender systems
+    - give a brief literature review about recommender systems
+- intent: ask_secondary_definition
+  examples: |
+    - tell me about cross domain recommender systems
+    - give a brief literature review about cross domain recommender systems
+    - what are cross domain recommender systems
+    - what do you know about the history of cross-domain recommender systems
+    - how does your work relate to recommender systems
+    - what is the difference between recommender systems and cross domain recommender systems
+    - how does recommender systems and cross domain recommender systems relate to each other
+- intent: ask_most_recent_developments
+  examples: |
+    - what are the most recent major developments in your area
+    - tell me new things happening in recommender systems
+    - tell me new things in cross-domain recommender systems
+    - what are new ideas in your field
+    - what are new topics in your research area
+    - what are the most recent developments in your research area
+- intent: ask_research_question1
+  examples: |
+    - what is your first research question
+    - research question one
+    - which question first
+    - what is your 1st research question
+    - what was your 1st question
+    - 1st research question
+- intent: ask_research_question2
+  examples: |
+    - what is your second research question
+    - what research question two
+    - which question second
+    - what is your 2nd research question
+    - what was your 2nd question
+    - 2nd research question
+- intent: ask_research_question3
+  examples: |
+    - what is your third research question
+    - what research question three
+    - which question third
+    - what is your 3rd research question
+    - what was your 3rd question
+    - 3rd research question
+- intent: ask_research_questions
+  examples: |
+    - what are your research questions
+    - research questions
+    - research goals
+    - what are the research goals
+    - what are the objective of your research
+    - thesis main questions
+    - thesis questions
+    - phd research questions
+    - thesis research questions
+    - what questions were asked in the thesis
+    - what questions are investigated in research
+    - what questions are studied in research
+    - what questions did oluseyi ask in research
+    - what are Oluseyi's research questions
+    - what are Dr Oluseyi's research questions
+    - what are oluseyi's research goals
+- intent: ask_key_research_decisions
+  examples: |
+    - what were the crucial research decisions you made
+    - what decision was critical to completing your research
+    - which decision affected your research most
+- intent: ask_experimental_design
+  examples: |
+    - how did you design your experiment
+    - what informed your experimental design
+    - what is your experimental design
+    - how did researcher setup his experiments
+    - what is the experimental setup
+    - what type of experimental setup was used
+    - the setup of the experiment
+- intent: ask_research_methodology
+  examples: |
+    - What is your research methodology
+    - why did you use this research methodology
+    - why are the methods you used in the research
+    - what was the methodology
+    - what is the methodology
+    - what methodology was used in the thesis
+- intent: ask_research_methodology_options
+  examples: |
+    - what were the alternatives to this methodology
+    - what alternative methodology are there
+- intent: ask_research_methodology_options_advantage
+  examples: |
+    - what would you have gained by using another approach
+    - what are the advantages of other options
+- intent: ask_ethical_issues
+  examples: |
+    - How did you deal with the ethical implications of your work
+    - how where ethical issues handled during your research
+    - what ethical issues did you face
+    - how did you handle ethical issues
+- intent: ask_dataset
+  examples: |
+    - what are the dataset you used in the research
+    - how many dataset did you use
+    - what datasets were used
+    - what data did you use
+    - how did you get you data
+    - where did you find right dataset
+    - where did you get data from
+    - how did you do data collection
+    - what was your data collection process
+    - what method did you use for data collection
+    - was primary data used
+    - was secondary data used
+- intent: ask_evaluation
+  examples: |
+    - How have you evaluated your work
+    - how was your model tested
+    - how did you test your model
+    - which evaluation tools did you use
+    - what method did you use to evaluate your models
+- intent: ask_evaluation_correct
+  examples: |
+    - How do you know that your findings are correct
+    - Are your findings correct
+    - How did you cross check your findings
+    - how did you double check your findings
+    - how did you validate your results
+- intent: ask_strongest
+  examples: |
+    - what are the strongest parts of your work
+    - which of these findings are the most interesting to you
+    - why are your findings interesting
+    - what is the strongest aspect of the thesis
+    - which part to you consider strongest
+- intent: ask_weakest
+  examples: |
+    - what are the weakest part of your work
+    - which part of your research need improvement
+    - what was your greatest challenge
+    - what challenged you the most during the research
+    - which challenge did you find most difficult
+- intent: ask_improvement
+  examples: |
+    - what would have improved your research work?
+    - what do you wish to improve in your work
+    - what part of the work needs improvement
+    - which improvements need to be made
+- intent: ask_summarise_finding
+  examples: |
+    - Summarise your key findings
+    - give a concise summary of your findings
+    - what were the findings
+    - summarize the finds
+    - tell me the findings
+    - tell me the findings of the research
+    - can you list the findings of the research
+    - what are the findings in the thesis
+    - tell me the results
+    - summarize your results
+    - give a summary of the results
+    - give a summary of the result
+    - discuss the result
+    - what are the results of the work
+    - comment on the results
+- intent: ask_finding_literature_relation
+  examples: |
+    - How do your findings relate to literature in your field
+    - what is the relationship between your findings and literature
+    - how does research link back to literature
+- intent: ask_empirical_practical_implications
+  examples: |
+    - what are the empirical, practice, and theoretical implications of your findings
+    - what is the implication of your work in your area
+    - how is your work important to your research area
+    - how has your work improved current research field
+- intent: ask_research_contribution1
+  examples: |
+    - what is your first research contribution
+    - what research contribution one
+    - which contribution first
+    - what is your 1st research contribution
+    - what was your 1st contribution
+    - 1st research contribution
+    - research contribution number one
+    - thesis contribution number one
+- intent: ask_research_contribution2
+  examples: |
+    - what is your second research contribution
+    - what research contribution two
+    - which contribution second
+    - what is your 2nd research contribution
+    - what was your 2nd contribution
+    - 2nd research contribution
+    - research contribution number two
+    - thesis contribution number two
+- intent: ask_research_contribution3
+  examples: |
+    - what is your third research contribution
+    - what research contribution three
+    - which contribution third
+    - what is your 3rd research contribution
+    - what was your 3rd contribution
+    - 3rd research contribution
+    - research contribution number three
+    - thesis contribution number three
+- intent: ask_research_contributions
+  examples: |
+    - what are the contributions to knowledge of your thesis
+    - To what extent do your contributions generalise
+    - what are the main achievements of your research
+    - what is the research contribution
+    - what are the research contribution
+    - In what way do you consider your thesis to be original
+    - How long-term are these contributions
+    - what have you done that merits a PhD
+    - why do you think you deserver a PhD
+    - what are the contributions
+    - what are the contribution
+    - what contributions
+    - what contribution
+    - contributions of work
+    - contribution of work
+    - contributions of research
+    - contribution of research
+    - what cotributions did researcher make to knowledge
+    - what cotribution did researcher make to knowledge
+    - what cotributions did researcher add to knowledge
+    - what cotribution did researcher add to knowledge
+    - how has research added to knowledge
+    - how has thesis work add to knowledge
+    - how has the research contributed to knowledge
+    - how has the thesis contributed to knowledge
+    - how did the research contribute to knowledge
+- intent: ask_phd_interests
+  examples: |
+    - who will be most interested in your work
+    - who can benefit from the research
+    - what is the relevance of your work to practitioners
+    - how is your work relevant to recommender industry
+    - who will find the research useful
+    - who will want to apply your research
+    - who can use your work
+    - How will society benefit from your research
+    - who is the work useful for
+    - who is the research useful for
+    - who is the research for
+    - which professionals will benefit from the research
+    - which professionals will find the result beneficial
+    - how will result make society better
+    - how will research impact society
+    - what impact will result in thesis have on society
+    - what impact will result of research have on society
+    - how will the society be impacted by research
+    - does the research impact society in anyway
+    - who will find research applicable
+    - where can the research be applied
+    - research applicability
+    - where will the research be found applicable
+- intent: ask_phd_publication
+  examples: |
+    - which aspects of your work do you intend to publish
+    - Where will you publish your work?
+    - what part of the research will you publish
+    - was the research published
+    - has the research been published
+    - where was the research published
+    - where will the research be published
+    - was the published work peer reviewed
+    - was the published research peer reviewed
+    - was the paper published peer reviewed
+    - what are oluseyi's publications
+    - oluseyi publications
+    - oluseyi's publication
+    - what are the researchers publication
+    - where can the researchers publication be found
+    - researchers publication
+    - where can oluseyi's publication be found
+    - has oluseyi published
+    - where has oluseyi published is work
+    - where has the research been published
+    - oluseyi's publications
+- intent: ask_research_futurework1
+  examples: |
+    - what is your first research future work
+    - what research future work one
+    - which future work first
+    - what is your 1st research future work
+    - what was your 1st future work
+    - 1st research future work
+- intent: ask_research_futurework2
+  examples: |
+    - what is your second research future work
+    - what research future work two
+    - which future work second
+    - what is your 2nd research future work
+    - what was your 2nd future work
+    - 2nd research future work
+- intent: ask_research_futurework3
+  examples: |
+    - what is your third future research work
+    - what future research work is number three
+    - which future work third
+    - what is your 3rd research future work
+    - what was your 3rd future work
+    - 3rd research future work
+- intent: ask_research_futureworks
+  examples: |
+    - what is the relevance of your work to other researchers
+    - what are the future research works
+    - what are the open research issues
+    - How would you hope that this research could be followed up and taken further
+    - what will you do as future work
+    - future works
+    - futre work
+    - future research work
+- intent: ask_researcher_status
+  examples: |
+    - what is researchers current employment status
+    - is the researcher now looking for work
+    - will researcher fit a datascience role
+    - which role will the researcher consider as best fit
+    - what is the researcher's current job situation
+    - what is next for the researcher in the field
+    - Is the researcher currently seeking employment
+    - what is the researcher doing now
+    - what is the current startus of the researcher
+    - does the researcher have a work now
+    - is oluseyi working now
+    - does oluseyi have an employment now
+    - can i employ the researcher
+    - what is the research currently doing
+    - what is next for the researcher after phd
+    - what will the phd student do next after phd
+    - is the researcher employable
+    - is oluseyi employable
+    - what's in the future for the researcher
+    - what is the researcher's future outlook
+    - are you available for employment
+    - is the researcher available for work
+    - is oluseyi available for work
+- intent: enter_data
+  examples: |
+    - [the conversation has been good welldone to thesisbot maker] (feedback)
+    - [More work need to be done to make the bot truly conversational] [rita pearl dulge] (name)
+    - [Not very engaging and almost bored me out] (feedback)
+    - [ok but chatbot can be improved on with better frameworks] (feedback)

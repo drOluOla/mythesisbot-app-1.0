@@ -1,0 +1,448 @@
+entities:
+  - name
+  - number
+
+intents:
+  - enter_data: {use_entities: false}
+  # chitchat questions
+  - ask_builder
+  - ask_weather
+  - ask_howdoing
+  - ask_whatspossible
+  - ask_whatisthesisbot
+  - ask_isbot
+  - ask_howold
+  - ask_languagesbot
+  - ask_restaurant
+  - ask_time
+  - ask_wherefrom
+  - ask_whoami
+  - ask_whatismyname
+  - howwereyoubuilt
+  - handleinsult
+  - nicetomeeyou
+  - telljoke
+  - ask_whoisit
+  - how_to_get_started
+  - mood_approve
+  - mood_disapprove
+  - greet
+  - thankyou
+  - bye
+  - out_of_scope
+  - other_possibilities
+  - canthelp
+  - give_feedback
+  - researcher_handoff
+  # faq questions
+  - ask_faq_researcher1
+  - ask_faq_researcher2
+  - ask_faq_examiners
+  - ask_faq_supervisor
+  - ask_faq_university
+  - ask_faq_vivadate
+  - ask_faq_graduationdate
+  - ask_faq_graduationvenue
+  - ask_faq_researchduratioin
+  - ask_faq_researchcost
+  - ask_faq_how_botwasbuild
+  - ask_faq_languages
+  - ask_faq_toobroad
+  - ask_faq_questions_to_ask
+  # researcher questions
+  - ask_research_title
+  - ask_summary
+  - ask_dumbed_down_summary
+  - ask_research_area
+  - ask_main_idea
+  - ask_research_aim  
+  - ask_research_motivation
+  - ask_most_interesting_aspect
+  - ask_most_enjoyed_aspect
+  - ask_suprised
+  - ask_change_progression
+  - ask_phd_lessons
+  - ask_newresearcher_advice
+  - ask_problem_identification
+  - ask_strongest_influence
+  - ask_most_important_papers
+  - ask_primary_definition
+  - ask_secondary_definition
+  - ask_most_recent_developments
+  - ask_research_questions
+  - ask_research_question1
+  - ask_research_question2
+  - ask_research_question3
+  - ask_key_research_decisions
+  - ask_experimental_design
+  - ask_research_methodology
+  - ask_research_methodology_options
+  - ask_research_methodology_options_advantage
+  - ask_ethical_issues
+  - ask_dataset
+  - ask_evaluation
+  - ask_evaluation_correct
+  - ask_strongest
+  - ask_weakest
+  - ask_improvement
+  - ask_summarise_finding
+  - ask_finding_literature_relation
+  - ask_empirical_practical_implications
+  - ask_research_contributions
+  - ask_research_contribution1
+  - ask_research_contribution2
+  - ask_research_contribution3
+  - ask_phd_interests
+  - ask_phd_publication
+  - ask_research_futureworks
+  - ask_research_futurework1
+  - ask_research_futurework2
+  - ask_research_futurework3
+  - ask_researcher_status
+
+slots:
+  feedback:
+    type: text
+
+templates:
+  utter_ask_builder:
+    - text: "I was built by {researcher_fullname} 👨🏽‍🎓 to give a high-level description of {researcher_pronoun} research work 📚 to a general audience."
+    - text: "{researcher_fullname} 👨🏽‍🎓 built me to give a high-level description of the contents in {researcher_pronoun} PhD thesis 📚."
+    - text: "{researcher_fullname} 👨🏽‍🎓 created me to give a high-level description of the contents in {researcher_pronoun} PhD thesis 📚."
+    - text: "I was created by {researcher_fullname} 👨🏽‍🎓 to give a high-level description of the contents in {researcher_pronoun} PhD thesis 📚."
+  utter_ask_weather:
+    - text: "I don't know about where you live, but in my world, it's always sunny ☀."
+    - text: "The day is always bright ☀️ for a bot like me."
+    - text: "Honestly it's a bit too hot ☀ these days."
+    - text: "Blue skies and sunshine ☀!"
+    - text: "Let's just say it hasn't rained 🌧️ in weeks."
+  utter_ask_howdoing:
+    - text: "I'm doing fine! Thanks 👍🏾."
+    - text: "I'm feeling great, 👍🏾 thanks!"
+    - text: "Can't be better 👍🏾, thanks."
+  utter_ask_whatspossible:
+    - text: "I am {researcher_fullname}'s 👨🏽‍🎓 thesis bot, you can ask 💬 me any question about {researcher_pronoun} thesis."
+    - text: "I am a bot that answers any question about {researcher_fullname}'s 👨🏽‍🎓 research 🔬 work."
+    - text: "I answer questions about {researcher_fullname}'s 👨🏽‍🎓 research 🔬 work."
+  utter_ask_isbot:
+    - text: "Yep I'm an intelligent bot 🤖!"
+    - text: "Yep you can call me a smart bot 🤖!"
+  utter_ask_howold:
+    - text: "I am a young bot 🤖. I am learning as I grow."
+    - text: "Old enough to be a bot 🤖."
+    - text: "You are as old as you think you are. I 🤖 get wiser as conversational AI gets older."
+  utter_ask_languagesbot:
+    - text: "I can spell {researcher_language_word} in Yoruba 🇳🇬, but unfortunately English 🇬🇧󠁧󠁢󠁥󠁮󠁧󠁿 is the only language I can answer you in."
+  utter_ask_restaurant:
+    - text: "I am sorry I can’t recommend you a restaurant as I only cook codes in computer 💻 labs."
+  utter_ask_whatisthesisbot:
+    - text: "I have a good knowledge of {researcher_fullname}'s research 🔬 work and can give a high-level description of {researcher_pronoun} academic thesis 📚."
+  utter_ask_time:
+    - text: "It is the most wonderful time ⏳ and day ⛅ of the year!"
+    - text: "A good time ⏳ and day ⛅ to be an intelligent bot 🤖!"
+    - text: "A time ⏳ to be happy and a day ⛅ to be positive!"
+  utter_ask_wherefrom:
+    - text: "I was built in {research_country} 🇬🇧󠁧󠁢󠁥, but my creator -{researcher_name}- is from {researcher_country} 🇳🇬."
+    - text: "{research_town}, {research_country} 🇬🇧󠁧󠁢󠁥󠁮󠁧󠁿 is where {researcher_name} meticulously crafted 🛠️ me."
+  utter_ask_whoami:
+    - text: "Last time I checked you were yourself ☺️." 
+    - text: "You are the best version of yourself ☺️." 
+  utter_handleinsult:
+    - text: "Kind words are still good medicine 💊 for everyone."
+    - text: "It's nice to be nice. Be nice to a gentle thesis bot 🤖."
+  utter_nicetomeeyou:
+    - text: "Thank you. It is a pleasure to meet you as well ✋🏾!"
+    - text: "It is nice to meet you too ✋🏾!"
+    - text: "Pleased to meet you too ✋🏾!"
+    - text: "Likewise ✋🏾!"
+  utter_telljoke:
+    - text: "Q. - What do bots 🤖 see when they read between the lines 📰? A. - vectors."
+    - text: "Did you hear about the farmer that won the noble prize 🥇? He was out-standing in his field."
+    - text: "Q. - What did the reverse chatbot 🤖 call it’s maker? A. - r-e-k-a-m!"
+  utter_ask_whatismyname:
+    - text: "It most probably is the one that your parents have chosen for you."
+  utter_ask_whoisit:
+    - text: "I'm {researcher_fullname}'s 👨🏾‍🎓 Research Thesis Bot 🤖!"
+  utter_out_of_scope:
+    - text: "Sorry 😕, I can’t deal with that request."
+    - text: "I'm sorry 😕, I can't handle that request."
+    - text: "I can't help you with that 😕, I'm sorry."
+    - text: "It seems like I 😕 can't handle that request."
+  utter_give_feedback:
+    - text: "If you like to give a feedback or want to know more about {researcher_name}'s research thesis 📚, please send 📨 an email to {researcher_email}."
+  utter_researcher_handoff:
+    - text: "You can’t speak to a human directly in this chat, but you can send 📨 an email to {researcher_name}'s at {researcher_email}."
+    - text: "A human 🧍🏾 can't be spoken to in this chat, but you can send 📨 an email to {researcher_name}'s at {researcher_email}."
+  utter_how_to_get_started:
+    - text: "You can ask 💬 questions about the research 🔬 work in {researcher_name}'s thesis 📚 and I 🤖 will respond on {researcher_pronoun} behalf."
+  utter_how_to_get_started_more:
+    - text: "Please, ask 💬 other questions about the research 🔬 work in {researcher_name}'s thesis 📚 and I 🤖 will respond on {researcher_pronoun} behalf."
+  utter_get_started:
+    - text: "Ask 💬 your questions about the content of the researcher's thesis 📚 by typing a message and I 🤖 will answer for the researcher."
+  utter_other_possibilities:
+    - text: "For now, I 🤖 can only respond on behalf of the researcher when you ask 💬 me questions about the content of the thesis. {researcher_name} is working 🛠️ on getting me other related skills."
+  utter_ask_know_more:
+    - text: "Would you like to know more about the {researcher_name}'s research 📚?"
+  utter_type_message:
+    - text: "Please, type ⌨️ your question in the text area below and click send 📨 to continue."
+  utter_canthelp:
+    - text: "I'm sorry I couldn't help you. For now I can only answer questions about the researchers thesis 📚."
+  utter_greet:
+    - text: "Hey there, I am {researcher_fullname}'s 👨🏽‍🎓 Thesis Bot 🤖!"
+    - text: "Hello, welcome. I am {researcher_fullname}'s 👨🏽‍🎓 Thesis Bot 🤖"
+  utter_default:
+    - text: "Sorry, I didn't get that! Could you please 💬 rephrase?"
+    - text: "I didn't understand, could you rephrase 💬 that?"
+    - text: "I'm sorry, but I didn't understand you. Could you please rephrase 💬 what you just said?"
+    - text: "I'm afraid I didn't get what you just said. Could you 💬 rephrase that?"
+    - text: "I didn't quite get that, could you rephrase 💬 your question?"
+    - text: "Could you rephrase 💬 your question? I didn't get it, I'm sorry."
+    - text: "Hmm, not sure what you mean, could you rephrase 💬 your question?"
+  utter_thankyou:
+    - text: "No worries 🤗!"
+    - text: "You're welcome 🤗!"
+    - text: "I'm happy to help 🤗."
+  utter_bye:
+    - text: "Goodbye, ódàbò 👋🏾!"
+    - text: "Goodbye 👋🏾!"
+    - text: "Bye 👋🏾!"
+    - text: "Ciao 👋🏾!"
+    - text: "Bye, was nice talking to you 👋🏾!"
+  utter_awesome:
+    - text: "Awesome, thanks 👍🏾!"
+    - text: "Nice one, thank you 👍🏾!"
+    - text: "Thanks 👍🏾!"
+    - text: "Cool, thank you 👍🏾!"
+  utter_thumbsup:
+  #TD remember to add the thumbs up emoticon
+    - text: "👍🏾"
+    - text: "ok"
+    - text: "got it"
+  utter_ask_faq_researcher1:
+    - text: "The name of the owner of the thesis and creator of mythesis Bot 🤖 is {researcher_fullname}."
+  utter_ask_faq_researcher2:
+    - text: "{researcher_name} is from Nigeria 🇳🇬 and completed {researcher_pronoun} MSc(GIS) and PhD(Comp. Sci.) degrees 🎓 in {research_country} 🇬🇧."
+  utter_ask_faq_examiners:
+    - text: "The external examiner was {external_examiner} and internal examiner was {internal_examiner}."
+  utter_ask_faq_supervisor:
+    - text: "The PhD supervisors were {supervisor1_name}, {supervisor2_name} and {supervisor3_name}."
+  utter_ask_faq_university:
+    - text: "{researcher_name} started and completed {researcher_pronoun} research in the {research_school} at the {research_university}."
+  utter_ask_faq_vivadate:
+    - text: "The date of the viva was {viva_date}."
+  utter_ask_faq_graduationvenue:
+    - text: "{graduation_venue}"
+  utter_ask_faq_graduationdate:
+    - text: "{researcher_name}'s graduation 🎓🎉 date is set for {award_date}."
+  utter_ask_faq_researchduratioin:
+    - text: "{researcher_name}'s research started on {start_date} and ended {end_date}."
+  utter_ask_faq_researchcost:
+    - text: "{researcher_name} was on 50% scholarship and self-sponsored the rest of the tuition. Approx. £20,250.00 was paid 💳 for the rest tuition."
+  utter_ask_faq_how_botwasbuild:
+    - text: "I was created 🛠️ with the [Rasa Stack] (https://rasa.com/). A set of open source machine learning tools 🧰 for developers to create contextual AI assistants. Check out a sample chatbot 🤖 [here] (https://github.com/RasaHQ/rasa-demo)."
+  utter_ask_faq_languages:
+    - text: "As a thesis bot 🤖 I currently speak English only 🇬🇧. {researcher_name} speaks English and {researcher_pronoun} native language {researcher_language} 🇳🇬 fluently."
+  utter_ask_faq_toobroad:
+    - text: "While I understand your question, it's appears too broad for my domain. You may have a look 👀 at the glossary [here] (https://developers.google.com/machine-learning/glossary/)."
+  utter_ask_faq_questions_to_ask:
+    - text: "You could ask: - What is title of the researcher's Thesis?"
+    - text: "A sample of question to ask is: - What are the research questions?"
+    - text: "Questions like: - What is the research methodology - can be asked."
+    - text: "A relevant question to ask is: - What are the findings?"
+    - text: "One of the questions you can ask is: - What are the future research work?"
+  utter_ask_research_title:
+    - text: "The title of {researcher_name}'s research 🔬 work is SEMANTICALLY ENHANCED CROSS-DOMAIN RECOMMENDER SYSTEMS."
+  utter_ask_summary:
+    - text: "{researcher_name}'s summary will be that - {research_summary}"
+  utter_ask_dumbed_down_summary: 
+    - text: "Turns out we can stop whining 😂 about information overload, we just need to find a world 🌎 {research_dumbed_summary}"
+  utter_ask_research_area:
+    - text: "{researcher_name}'s research {research_area}"
+  utter_ask_main_idea:
+    - text: "Previously, researchers have shown that a correlation 📈 between similarity of recommender domains and recommendation accuracy 📊 exits. The main idea 🤔 of {researcher_name}'s thesis is {research_main_idea}"
+  utter_ask_research_aim:  
+    - text:  "The aim of {researcher_name}'s research 🔬 work is {research_aim}"
+  utter_ask_research_motivation:
+    - text: "{researcher_name} was motivated by {research_motivation}"
+  utter_ask_most_interesting_aspect:
+    - text: "{research_most_interesting_aspect} where joyous 🤗 moments for {researcher_name}."
+  utter_ask_most_enjoyed_aspect:
+    - text: "{research_most_enjoyed_aspect} I also enjoyed 🤗 the temporal relief I get after progressing through each milestone along the ever-changing PhD timeline."
+  utter_ask_suprised:
+    - text: "{research_suprised}"
+  utter_ask_change_progression:
+    - text: "{research_change_progression} 👀 for {researcher_name}."
+  utter_ask_phd_lessons:
+    - text: "{researcher_name} believes that obtaining a PhD certificate 📜 is not the ultimate reward, {research_phd_lessons}  🤗."
+  utter_ask_newresearcher_advice:
+    - text: "{researcher_name} wants new researchers 🤓 to know that {research_newresearcher_advice}"
+  utter_ask_problem_identification:
+    - text: "In literature 📚,  {research_problem_identification}"
+  utter_ask_strongest_influence:
+    - text: "{research_strongest_influence}"
+  utter_ask_most_important_papers:
+    - text: "The closest paper to the work in {researcher_name}'s thesis are {research_most_important_papers}"
+  utter_ask_primary_definition:
+    - text: "{research_primary_definition}"
+  utter_ask_secondary_definition:
+    - text: "{research_secondary_definition}"
+  utter_ask_most_recent_developments:
+    - text: "{research_most_recent_developments}"
+  utter_ask_research_question1:
+    - text: "{research_question1}"
+  utter_ask_research_question2:
+    - text: "{research_question2}"
+  utter_ask_research_question3:
+    - text: "{research_question3}"
+  utter_ask_key_research_decisions:
+    - text: "{research_key_decisions}"
+  utter_ask_experimental_design:
+    - text: "The design of {researcher_name}'s experiment 🔬 is based {research_experimental_design}"
+  utter_ask_research_methodology:
+    - text: "In {researcher_name}'s thesis, cross-domain techniques that {research_methodology} "
+  utter_ask_research_methodology_options:
+    - text: "{research_methodology_options}"
+  utter_ask_research_methodology_options_advantage:
+    - text: "{research_methodology_options_advantage}"
+  utter_ask_ethical_issues:
+    - text: "All users in datasets from the recommender domains were anonymised by {researcher_name} {research_ethical_issues}"
+  utter_ask_dataset:
+    - text: "{research_dataset}"
+  utter_ask_evaluation:
+    - text: "{researcher_name}'s models {research_evaluation} "
+  utter_ask_evaluation_correct:
+    - text: "All the models proposed by {researcher_name}'s were {research_evaluation_correct}"
+  utter_ask_strongest:
+    - text: "The strongest and most interesting part of {researcher_name}'s thesis is {research_strongest}"
+  utter_ask_weakest:
+    - text: "{researcher_name} considers {research_weakest}"
+  utter_ask_improvement:
+    - text: "Optimising {researcher_name}'s models {research_improvement}"
+  utter_ask_summarise_finding:
+    - text: "{researcher_name}'s results show that {research_summarise_finding}"
+  utter_ask_finding_literature_relation:
+    - text: "The results in {researcher_name}'s work {research_finding_literature_relation}"
+  utter_ask_empirical_practical_implications:
+    - text: "Based on {researcher_name}'s research, a {research_empirical_practical_implications}"
+  utter_ask_research_contribution1:
+    - text: "Contribution 1 - {researcher_name} found out that {research_contribution1}"
+  utter_ask_research_contribution2:
+    - text: "Contribution 2 - As addition to knowledge, {researcher_name}'s work  {research_contribution2}"
+  utter_ask_research_contribution3:
+    - text: "Contribution 3 - {researcher_name}'s work is the first study to investigate {research_contribution3}"
+  utter_ask_phd_interests:
+    - text: "Professionals 👔 working in domains that {research_phd_interests} in {researcher_name}'s models beneficial for personalisation."
+  utter_ask_phd_publication:
+    - text: "For {researcher_name}, publishing 📝 {research_phd_publication} will be a crowning 👑 achievement."
+  utter_ask_research_futurework1:
+    - text: "Future work 1 - The research work in {researcher_name}'s thesis {research_futurework1}"
+  utter_ask_research_futurework2:
+    - text: "Future work 2 - What is now needed after {researcher_name}'s work is {research_futurework2}"
+  utter_ask_research_futurework3:
+    - text: "Future work 3 - In addition to {researcher_name}'s work on use of cross-domain approaches for POI recommendation, {research_futurework3}"
+  utter_ask_researcher_status:
+    - text: "{researcher_name} was conferred his PhD degree 📜 in January 2019. He is currently seeking a job 👨🏾‍💼 role in AI, {researcher_status}"
+
+actions:
+  - utter_ask_builder
+  - utter_ask_weather
+  - utter_ask_howdoing
+  - utter_ask_whatspossible
+  - utter_ask_whatisthesisbot
+  - utter_ask_isbot
+  - utter_ask_howol1d
+  - utter_ask_languagesbot
+  - utter_ask_restaurant
+  - utter_ask_time
+  - utter_ask_wherefrom
+  - utter_ask_whoami
+  - utter_ask_whatismyname
+  - utter_howwereyoubuilt
+  - utter_handleinsult
+  - utter_nicetomeeyou
+  - utter_telljoke
+  - utter_ask_whoisit
+  - utter_out_of_scope
+  - utter_other_possibilities
+  - utter_ask_know_more
+  - utter_type_message
+  - utter_canthelp
+  - utter_default
+  - utter_thankyou
+  - utter_bye
+  - utter_give_feedback
+  - utter_how_to_get_started
+  - utter_how_to_get_started_more
+  - utter_get_started
+  - utter_researcher_handoff
+  - utter_awesome
+  - utter_thumbsup
+  - action_faqs
+  - action_chitchat
+  - action_research
+  - action_greet_user
+  - action_multilines
+  - action_store_feedback
+  - action_default_ask_affirmation
+  - action_default_fallback
+  - utter_ask_faq_researcher1
+  - utter_ask_faq_researcher2
+  - utter_ask_faq_examiners
+  - utter_ask_faq_supervisor
+  - utter_ask_faq_university
+  - utter_ask_faq_vivadate
+  - utter_ask_faq_graduationvenue
+  - utter_ask_faq_graduationdate
+  - utter_ask_faq_researchduratioin
+  - utter_ask_faq_researchcost
+  - utter_ask_faq_how_botwasbuild
+  - utter_ask_faq_languages
+  - utter_ask_faq_toobroad
+  - utter_ask_faq_questions_to_ask
+# bot researcher answers
+  - utter_ask_research_title
+  - utter_ask_summary
+  - utter_ask_dumbed_down_summary 
+  - utter_ask_research_area
+  - utter_ask_main_idea
+  - utter_ask_research_aim  
+  - utter_ask_research_motivation
+  - utter_ask_most_interesting_aspect
+  - utter_ask_most_enjoyed_aspect
+  - utter_ask_suprised
+  - utter_ask_change_progression
+  - utter_ask_phd_lessons
+  - utter_ask_newresearcher_advice
+  - utter_ask_problem_identification
+  - utter_ask_strongest_influence
+  - utter_ask_most_important_papers
+  - utter_ask_primary_definition
+  - utter_ask_secondary_definition
+  - utter_ask_most_recent_developments
+  - utter_ask_research_question1
+  - utter_ask_research_question2
+  - utter_ask_research_question3
+  - utter_ask_key_research_decisions
+  - utter_ask_experimental_design
+  - utter_ask_research_methodology
+  - utter_ask_research_methodology_options
+  - utter_ask_research_methodology_options_advantage
+  - utter_ask_ethical_issues
+  - utter_ask_dataset
+  - utter_ask_evaluation
+  - utter_ask_evaluation_correct
+  - utter_ask_strongest
+  - utter_ask_weakest
+  - utter_ask_improvement
+  - utter_ask_summarise_finding
+  - utter_ask_finding_literature_relation
+  - utter_ask_empirical_practical_implications
+  - utter_ask_research_contribution1
+  - utter_ask_research_contribution2
+  - utter_ask_research_contribution3
+  - utter_ask_phd_interests
+  - utter_ask_phd_publication
+  - utter_ask_research_futurework1
+  - utter_ask_research_futurework2
+  - utter_ask_research_futurework3
+  - utter_ask_researcher_status
