@@ -1,1 +1,1 @@
-This repo contains all the source codes and resources for the original mythesisbot, now remamed as version 1.0.
+MyThesisbot was created by oluseyi olarewaju after completing his PhD in Computer Science and desiring to share a summarised version of his research work. Most importantly, the bot has been made open source by Oluseyi to encourage other interested researchers to customise it with the content of their own research work. You can send him an email at <span>{email}</span> or visit his personal page on <span>{website}</span> </p>
